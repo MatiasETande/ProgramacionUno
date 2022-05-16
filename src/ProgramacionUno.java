@@ -14,7 +14,7 @@ public class ProgramacionUno {
     public static void main(String[] args){
 
         System.out.println("--- Algoritmos utilizados en la clase ---");
-
+        System.out.println("--- Esto es una prueba ---");
 
 
 
