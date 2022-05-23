@@ -1,7 +1,7 @@
 package Algoritmos;
 public class Ordenamiento {
 
-    static void burbuja(int[] arreglo) {
+    public void burbuja(int[] arreglo) {
 
         int aux = -1;
 
@@ -17,13 +17,13 @@ public class Ordenamiento {
                 }
 
 				// Imprimo el contenido del arreglo
-                imprimirArreglo(arreglo);
+                //imprimirArreglo(arreglo);
             }
         }
 
     }
 
-    static void insercion(int[] arreglo){
+    public void insercion(int[] arreglo){
 
         int aux = -1;
         int j;
@@ -56,7 +56,7 @@ public class Ordenamiento {
 
     }
 
-    static void seleccion(int[] arreglo){
+    public void seleccion(int[] arreglo){
 
         int aux1;
         int aux2;
@@ -89,7 +89,7 @@ public class Ordenamiento {
         }
     }
 
-    static void imprimirArreglo(int[] arreglo){
+    public void imprimirArreglo(int[] arreglo){
 		// Método utilizado para imprimir los valores de los arreglos.
 
         for (int i = 0; i < arreglo.length; i++){
