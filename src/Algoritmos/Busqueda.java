@@ -21,28 +21,24 @@ public void busquedaLineal(int[] arreglo, int valor) {
 }
 
 /* Método de Búsqueda Secuencial o Lineal con Centinela */
-public static int busquedaLinealCentinela(int[] arreglo, int valor) {
+public void busquedaLinealCentinela(int[] arreglo, int valor) {
 
     int i = 0;
 
     while(i < arreglo.length && arreglo[i] != valor) {
         i++;
-        System.out.println("Nro iteraciones: " + i);
     }
 
-    if (i < arreglo.length)
-        return i;
-
-    return -1;
+    if (valor == arreglo[i])System.out.println("encuentra en la posicion: "+i);
+    else System.out.println("No se encontro el valor "+valor+" en el arreglo");  
 }
 
 /* Ejemplo de Método de Búsqueda Secuencial o Lineal adaptado con For y Return */
-public static int busquedaLinealCustom(int[] arreglo, int valor){
+public int busquedaLinealCustom(int[] arreglo, int valor){
 
     for (int i = 0; i < arreglo.length; i++) {
 
         if (arreglo[i] == valor){
-            System.out.println("nro iteraciones: " + i);
             return i;
         }
     }
@@ -51,7 +47,7 @@ public static int busquedaLinealCustom(int[] arreglo, int valor){
 }
 
 /* Método de Búsqueda Binaria */
-public static int busquedaBinaria(int[] arreglo, int valor) {
+public  int busquedaBinaria(int[] arreglo, int valor) {
     int min = 0;
     int max = arreglo.length - 1;
     int medio = 0;
